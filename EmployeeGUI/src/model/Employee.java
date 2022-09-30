@@ -10,9 +10,9 @@ package model;
  */
 public class Employee {
     
-    private String empName;
+    private String Name;
     private String empID;
-    private String empAge;
+    private String Age;
     private String gender;
     private String startDate;
     private String level;
@@ -21,12 +21,12 @@ public class Employee {
     private String contact;
     private String photo;
 
-    public String getEmpName() {
-        return empName;
+    public String getName() {
+        return Name;
     }
 
-    public void setEmpName(String empName) {
-        this.empName = empName;
+    public void setName(String Name) {
+        this.Name = Name;
     }
 
     public String getEmpID() {
@@ -37,12 +37,12 @@ public class Employee {
         this.empID = empID;
     }
 
-    public String getEmpAge() {
-        return empAge;
+    public String getAge() {
+        return Age;
     }
 
-    public void setEmpAge(String empAge) {
-        this.empAge = empAge;
+    public void setAge(String Age) {
+        this.Age = Age;
     }
 
     public String getGender() {
