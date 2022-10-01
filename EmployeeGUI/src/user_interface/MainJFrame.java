@@ -4,6 +4,8 @@
  */
 package user_interface;
 
+import model.Employee;
+
 /**
  *
  * @author chandukongara
@@ -13,8 +15,14 @@ public class MainJFrame extends javax.swing.JFrame {
     /**
      * Creates new form MainJFrame
      */
+    
+    Employee employee;
+    
     public MainJFrame() {
+        
         initComponents();
+        employee = new Employee();
+
     }
 
     /**
