@@ -4,7 +4,8 @@
  */
 package user_interface;
 
-import model.Employee;
+import model.Employee;    /*Delete*/
+import model.EmployeeDataHistory;
 
 /**
  *
@@ -16,7 +17,7 @@ public class MainJFrame extends javax.swing.JFrame {
      * Creates new form MainJFrame
      */
     
-    Employee employee;
+    EmployeeDataHistory history;
     
     public MainJFrame() {
         

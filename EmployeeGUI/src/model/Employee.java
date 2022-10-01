@@ -11,8 +11,8 @@ package model;
 public class Employee {
     
     private String Name;
-    private String empID;
-    private String Age;
+    private int empID;
+    private int Age;
     private String gender;
     private String startDate;
     private String level;
@@ -29,19 +29,19 @@ public class Employee {
         this.Name = Name;
     }
 
-    public String getEmpID() {
+    public int getEmpID() {
         return empID;
     }
 
-    public void setEmpID(String empID) {
+    public void setEmpID(int empID) {
         this.empID = empID;
     }
 
-    public String getAge() {
+    public int getAge() {
         return Age;
     }
 
-    public void setAge(String Age) {
+    public void setAge(int Age) {
         this.Age = Age;
     }
 
