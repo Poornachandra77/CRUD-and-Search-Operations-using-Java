@@ -19,6 +19,7 @@ public class ViewJPanel extends javax.swing.JPanel {
     public ViewJPanel(Employee employee) {
         initComponents();
         this.employee = employee;
+        viewEmployee();
     }
 
     /**
@@ -112,4 +113,11 @@ public class ViewJPanel extends javax.swing.JPanel {
     private javax.swing.JTextField txtGender;
     private javax.swing.JTextField txtName;
     // End of variables declaration//GEN-END:variables
+
+    private void viewEmployee() {
+        txtName.setText(employee.getName());
+        txtEmpID.setText(employee.getEmpID());
+        txtAge.setText(employee.getAge());
+        txtGender.setText(employee.getGender());
+    }
 }
