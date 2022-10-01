@@ -22,7 +22,7 @@ public class MainJFrame extends javax.swing.JFrame {
     public MainJFrame() {
         
         initComponents();
-        employee = new Employee();
+        history = new EmployeeDataHistory();
 
     }
 
