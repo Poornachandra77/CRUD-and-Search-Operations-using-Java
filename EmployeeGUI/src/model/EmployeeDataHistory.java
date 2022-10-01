@@ -26,4 +26,9 @@ public class EmployeeDataHistory {
         this.history = history;
     }
 
+    public Employee addNewEmployeeData(){
+        Employee newEmployeeData = new Employee();
+        history.add(newEmployeeData);
+        return newEmployeeData;
+    }
 }

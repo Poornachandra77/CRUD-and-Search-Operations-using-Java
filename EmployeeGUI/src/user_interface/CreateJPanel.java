@@ -6,6 +6,7 @@ package user_interface;
 
 import javax.swing.JOptionPane;
 import model.Employee;
+import model.EmployeeDataHistory;
 
 /**
  *
@@ -13,14 +14,14 @@ import model.Employee;
  */
 public class CreateJPanel extends javax.swing.JPanel {
 
-    Employee employee;
+    EmployeeDataHistory history;
     
     /**
      * Creates new form CreateJPanel
      */
-    public CreateJPanel(Employee employee) {
+    public CreateJPanel(EmployeeDataHistory history) {
         initComponents();
-        this.employee = employee;
+        this.history = history;
     }
 
     /**
@@ -49,7 +50,7 @@ public class CreateJPanel extends javax.swing.JPanel {
         lblTeamInfo = new javax.swing.JLabel();
         lblContact = new javax.swing.JLabel();
         lblPositionTitle = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        lblPhoto = new javax.swing.JLabel();
         txtTeamInfo = new javax.swing.JTextField();
         txtContact = new javax.swing.JTextField();
         txtPositionTitle = new javax.swing.JTextField();
@@ -96,7 +97,7 @@ public class CreateJPanel extends javax.swing.JPanel {
 
         lblPositionTitle.setText("Position Title:");
 
-        jLabel1.setText("Photo:");
+        lblPhoto.setText("Photo:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -133,7 +134,7 @@ public class CreateJPanel extends javax.swing.JPanel {
                                         .addComponent(txtPositionTitle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                            .addComponent(jLabel1)
+                                            .addComponent(lblPhoto)
                                             .addGap(53, 53, 53)
                                             .addComponent(txtPhoto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -202,7 +203,7 @@ public class CreateJPanel extends javax.swing.JPanel {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(txtContact, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel1)
+                                .addComponent(lblPhoto)
                                 .addComponent(lblContact))
                             .addComponent(txtPhoto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(32, 32, 32)))
@@ -216,13 +217,52 @@ public class CreateJPanel extends javax.swing.JPanel {
 
     private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
         // TODO add your handling code here:
-        
-        employee.setName(txtName.getText());
+        //Delete
+        /*employee.setName(txtName.getText());
         employee.setEmpID(txtEmpID.getText());
         employee.setAge(txtAge.getText());
-        employee.setGender(txtGender.getText());
+        employee.setGender(txtGender.getText());*/ 
         
-        JOptionPane.showMessageDialog(this, "Employee Details is succesfully saved");
+        String name = txtName.getText();
+        int empID = Integer.parseInt(txtEmpID.getText());;
+        int age = Integer.parseInt(txtAge.getText());
+        String gender = txtGender.getText();
+        String startDate = txtStartDate.getText();
+        String level = txtLevel.getText();
+        String teamInfo = txtTeamInfo.getText();
+        String positionTitle = txtPositionTitle.getText();
+        String contact = txtContact.getText();
+        String photo = txtPhoto.getText();
+        
+        Employee e = history.addNewEmployeeData();
+        
+        e.setName(name);
+        e.setEmpID(empID);
+        e.setAge(age);
+        e.setGender(gender);
+        e.setStartDate(startDate);
+        e.setLevel(level);
+        e.setTeamInfo(teamInfo);
+        e.setPositionTitle(positionTitle);
+        e.setContact(contact);
+        e.setPhoto(photo);
+        
+        JOptionPane.showMessageDialog(this, "New Employee Details is succesfully added");
+        
+        txtName.setText("");
+        txtEmpID.setText("");
+        txtAge.setText("");
+        txtGender.setText("");
+        txtStartDate.setText("");
+        txtLevel.setText("");
+        txtTeamInfo.setText("");
+        txtPositionTitle.setText("");
+        txtContact.setText("");
+        txtPhoto.setText("");
+        
+   
+        
+        
     }//GEN-LAST:event_btnSaveActionPerformed
 
     private void txtNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNameActionPerformed
@@ -236,13 +276,13 @@ public class CreateJPanel extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnSave;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lblAge;
     private javax.swing.JLabel lblContact;
     private javax.swing.JLabel lblEmpID;
     private javax.swing.JLabel lblGender;
     private javax.swing.JLabel lblLevel;
     private javax.swing.JLabel lblName;
+    private javax.swing.JLabel lblPhoto;
     private javax.swing.JLabel lblPositionTitle;
     private javax.swing.JLabel lblStartDate;
     private javax.swing.JLabel lblTeamInfo;
