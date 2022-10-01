@@ -4,6 +4,7 @@
  */
 package user_interface;
 
+import javax.swing.JOptionPane;
 import model.Employee;
 
 /**
@@ -115,6 +116,13 @@ public class CreateJPanel extends javax.swing.JPanel {
 
     private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
         // TODO add your handling code here:
+        
+        employee.setName(txtName.getText());
+        employee.setEmpID(txtEmpID.getText());
+        employee.setAge(txtAge.getText());
+        employee.setGender(txtGender.getText());
+        
+        JOptionPane.showMessageDialog(this, "Employee Details is succesfully saved");
     }//GEN-LAST:event_btnSaveActionPerformed
 
 
