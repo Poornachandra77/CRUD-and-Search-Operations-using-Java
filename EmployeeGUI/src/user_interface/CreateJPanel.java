@@ -4,17 +4,22 @@
  */
 package user_interface;
 
+import model.Employee;
+
 /**
  *
  * @author chandukongara
  */
 public class CreateJPanel extends javax.swing.JPanel {
 
+    Employee employee;
+    
     /**
      * Creates new form CreateJPanel
      */
-    public CreateJPanel() {
+    public CreateJPanel(Employee employee) {
         initComponents();
+        this.employee = employee;
     }
 
     /**
