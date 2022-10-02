@@ -49,19 +49,21 @@
                                               </Group>
                                           </Group>
                                       </Group>
-                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
                                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                       <Component id="btnView" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Component id="btnDelete" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
-                                      <EmptySpace min="-2" pref="102" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                                      <Component id="btnUpdate" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Component id="lblName" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Component id="lblLevel" min="-2" max="-2" attributes="0"/>
@@ -70,7 +72,7 @@
                                       <Component id="lblGender" alignment="1" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Component id="lblPositionTitle" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lblPhoto" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblEmail" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" attributes="0">
@@ -102,7 +104,7 @@
                       <Component id="txtGender" linkSize="2" min="-2" pref="183" max="-2" attributes="0"/>
                   </Group>
                   <Component id="txtLevel" linkSize="2" min="-2" pref="109" max="-2" attributes="0"/>
-                  <Component id="txtPhoto" linkSize="2" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtEmail" linkSize="2" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
@@ -125,6 +127,7 @@
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="btnView" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="btnDelete" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnUpdate" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -160,8 +163,8 @@
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="lblContact" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtContact" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblPhoto" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtPhoto" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblEmail" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtEmail" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="26" max="32767" attributes="0"/>
           </Group>
@@ -190,9 +193,9 @@
         <Property name="text" type="java.lang.String" value="Position Title:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblPhoto">
+    <Component class="javax.swing.JLabel" name="lblEmail">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Photo:"/>
+        <Property name="text" type="java.lang.String" value="Email"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="txtTeamInfo">
@@ -237,7 +240,10 @@
     </Component>
     <Component class="javax.swing.JTextField" name="txtAge">
     </Component>
-    <Component class="javax.swing.JTextField" name="txtPhoto">
+    <Component class="javax.swing.JTextField" name="txtEmail">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtEmailActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblLevel">
       <Properties>
@@ -318,6 +324,14 @@
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDeleteActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnUpdate">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Update"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnUpdateActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

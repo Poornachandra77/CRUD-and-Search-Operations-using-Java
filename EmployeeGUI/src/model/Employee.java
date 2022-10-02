@@ -19,7 +19,7 @@ public class Employee {
     private String teamInfo;
     private String positionTitle;
     private String contact;
-    private String photo;
+    private String email;
 
     public String getName() {
         return name;
@@ -93,12 +93,12 @@ public class Employee {
         this.contact = contact;
     }
 
-    public String getPhoto() {
-        return photo;
+    public String getEmail() {
+        return email;
     }
 
-    public void setPhoto(String photo) {
-        this.photo = photo;
+    public void setEmail(String email) {
+        this.email = email;
     }
     
     @Override

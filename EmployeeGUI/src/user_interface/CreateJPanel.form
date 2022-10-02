@@ -55,9 +55,9 @@
                                   </Group>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="1" attributes="0">
-                                          <Component id="lblPhoto" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lblEmail" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
-                                          <Component id="txtPhoto" linkSize="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="txtEmail" linkSize="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="1" attributes="0">
                                           <Group type="103" groupAlignment="1" attributes="0">
@@ -144,9 +144,9 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="txtContact" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblPhoto" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblEmail" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="txtPhoto" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtEmail" min="-2" max="-2" attributes="0"/>
                           <Component id="lblContact" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
@@ -239,9 +239,9 @@
         <Property name="text" type="java.lang.String" value="Position Title:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblPhoto">
+    <Component class="javax.swing.JLabel" name="lblEmail">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Photo:"/>
+        <Property name="text" type="java.lang.String" value="Email:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="txtTeamInfo">
@@ -250,7 +250,7 @@
     </Component>
     <Component class="javax.swing.JTextField" name="txtPositionTitle">
     </Component>
-    <Component class="javax.swing.JTextField" name="txtPhoto">
+    <Component class="javax.swing.JTextField" name="txtEmail">
     </Component>
   </SubComponents>
 </Form>
