@@ -31,4 +31,8 @@ public class EmployeeDataHistory {
         history.add(newEmployeeData);
         return newEmployeeData;
     }
+
+    public void deleteEmployees(Employee selectedEmployees) {
+        history.remove(selectedEmployees);
+    }
 }
