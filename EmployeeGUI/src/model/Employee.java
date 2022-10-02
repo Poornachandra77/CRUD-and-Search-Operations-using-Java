@@ -11,8 +11,8 @@ package model;
 public class Employee {
     
     private String name;
-    private int empID;
-    private int age;
+    private String empID;
+    private String age;
     private String gender;
     private String startDate;
     private String level;
@@ -29,19 +29,19 @@ public class Employee {
         this.name = name;
     }
 
-    public int getEmpID() {
+    public String getEmpID() {
         return empID;
     }
 
-    public void setEmpID(int empID) {
+    public void setEmpID(String empID) {
         this.empID = empID;
     }
 
-    public int getAge() {
+    public String getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(String age) {
         this.age = age;
     }
 

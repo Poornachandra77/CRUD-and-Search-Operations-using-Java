@@ -224,8 +224,8 @@ public class CreateJPanel extends javax.swing.JPanel {
         employee.setGender(txtGender.getText());*/ 
         
         String name = txtName.getText();
-        int empID = Integer.parseInt(txtEmpID.getText());;
-        int age = Integer.parseInt(txtAge.getText());
+        String empID = txtEmpID.getText();
+        String age = txtAge.getText();
         String gender = txtGender.getText();
         String startDate = txtStartDate.getText();
         String level = txtLevel.getText();
@@ -259,8 +259,7 @@ public class CreateJPanel extends javax.swing.JPanel {
         txtPositionTitle.setText("");
         txtContact.setText("");
         txtPhoto.setText("");
-        
-   
+
         
         
     }//GEN-LAST:event_btnSaveActionPerformed
