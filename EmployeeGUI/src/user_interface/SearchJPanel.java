@@ -230,7 +230,7 @@ public class SearchJPanel extends javax.swing.JPanel {
 //            Object[] row = new Object[9];
             if (getempID.equals(e.getEmpID())) {
 
-                JOptionPane.showMessageDialog(this, e.getEmpID());
+                JOptionPane.showMessageDialog(this, "Search for employee id successful");
                 txtName.setText(e.getName());
                 txtEmpID.setText(e.getEmpID());
                 txtAge.setText(e.getAge());
@@ -241,6 +241,7 @@ public class SearchJPanel extends javax.swing.JPanel {
                 txtContact.setText(e.getContact());
                 txtEmail.setText(e.getEmail());
 
+                
             }
         }
     }//GEN-LAST:event_btnSearchActionPerformed
