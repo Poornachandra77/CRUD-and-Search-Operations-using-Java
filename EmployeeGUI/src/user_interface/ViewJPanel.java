@@ -71,7 +71,7 @@ public class ViewJPanel extends javax.swing.JPanel {
 
         lblPositionTitle.setText("Position Title:");
 
-        lblEmail.setText("Email");
+        lblEmail.setText("Email:");
 
         lblStartDate.setText("Start Date:");
 
@@ -303,8 +303,6 @@ public class ViewJPanel extends javax.swing.JPanel {
         
         populateTable();
 
-        
-        
     }//GEN-LAST:event_btnDeleteActionPerformed
 
     private void btnViewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewActionPerformed
